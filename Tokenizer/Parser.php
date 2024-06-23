@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Tokenizer;
+namespace Phppride\Documentor\Tokenizer;
 
 final class Parser
 {

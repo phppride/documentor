@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Tests\Providers;
+namespace Phppride\Documentor\Tests\Providers;
 
 final class TokenDataProvider
 {

@@ -1,9 +1,9 @@
 <?php
 
-namespace Hmrdevil\Html5\Tests\Builder\Node;
+namespace Phppride\Documentor\Tests\Builder\Node;
 
-use Hmrdevil\Html5\Builder\Node\Tag;
-use Hmrdevil\Html5\Enums\TagType;
+use Phppride\Documentor\Builder\Node\Tag;
+use Phppride\Documentor\Enums\TagType;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 

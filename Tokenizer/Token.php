@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Tokenizer;
+namespace Phppride\Documentor\Tokenizer;
 
-use Hmrdevil\Html5\Builder\Node\AbstractNode;
-use Hmrdevil\Html5\Contracts\Node;
+use Phppride\Documentor\Builder\Node\AbstractNode;
+use Phppride\Documentor\Contracts\Node;
 
 final class Token extends AbstractNode implements Node
 {

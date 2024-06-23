@@ -1,9 +1,9 @@
 <?php
 
-namespace Hmrdevil\Html5\Tests\Tokenizer;
+namespace Phppride\Documentor\Tests\Tokenizer;
 
-use Hmrdevil\Html5\Tests\Providers\TokenDataProvider;
-use Hmrdevil\Html5\Tokenizer\Token;
+use Phppride\Documentor\Tests\Providers\TokenDataProvider;
+use Phppride\Documentor\Tokenizer\Token;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProviderExternal;
 

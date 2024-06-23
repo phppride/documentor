@@ -1,11 +1,11 @@
 {
-    "name": "hmrdevil/html5",
-    "description": "An HTML5 parser and serializer conforming to the specification",
+    "name": "phppride/documentor",
+    "description": "",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Hmrdevil\\Html5\\": ""
+            "Phppride\\Documentor\\": ""
         },
         "exclude-from-classmap": [
             "Tests/"
@@ -13,7 +13,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Hmrdevil\\Html5\\Tests\\": "Tests/"
+            "Phppride\\Documentor\\Tests\\": "Tests/"
         }
     },
     "authors": [

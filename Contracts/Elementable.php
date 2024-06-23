@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Contracts;
+namespace Phppride\Documentor\Contracts;
 
-use Hmrdevil\Html5\Enums\TagType;
+use Phppride\Documentor\Enums\TagType;
 
 interface Elementable extends Node
 {

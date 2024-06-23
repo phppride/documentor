@@ -2,10 +2,10 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Builder\Node;
+namespace Phppride\Documentor\Builder\Node;
 
-use Hmrdevil\Html5\Enums\TagType;
-use Hmrdevil\Html5\Contracts\Elementable;
+use Phppride\Documentor\Enums\TagType;
+use Phppride\Documentor\Contracts\Elementable;
 
 final class Tag extends AbstractNode implements Elementable
 {

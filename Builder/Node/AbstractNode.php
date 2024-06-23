@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Builder\Node;
+namespace Phppride\Documentor\Builder\Node;
 
-use Hmrdevil\Html5\Contracts\Node;
+use Phppride\Documentor\Contracts\Node;
 
 abstract class AbstractNode implements Node
 {

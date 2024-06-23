@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Contracts;
+namespace Phppride\Documentor\Contracts;
 
-use Hmrdevil\Html5\Rule\RuleType;
+use Phppride\Documentor\Rule\RuleType;
 
 interface RuleSet
 {

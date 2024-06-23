@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Tokenizer;
+namespace Phppride\Documentor\Tokenizer;
 
-use Hmrdevil\Html5\Contracts\Tokenable;
+use Phppride\Documentor\Contracts\Tokenable;
 
 final class TokenFactory
 {

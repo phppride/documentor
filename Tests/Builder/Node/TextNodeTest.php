@@ -1,8 +1,8 @@
 <?php
 
-namespace Hmrdevil\Html5\Tests\Builder\Node;
+namespace Phppride\Documentor\Tests\Builder\Node;
 
-use Hmrdevil\Html5\Builder\Node\TextNode;
+use Phppride\Documentor\Builder\Node\TextNode;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 
