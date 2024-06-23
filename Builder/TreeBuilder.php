@@ -5,7 +5,7 @@ declare(strict_types=1);
 namespace Phppride\Documentor\Builder;
 
 use Phppride\Documentor\Builder\Node\TextNode;
-use Phppride\Documentor\Contracts\Builder;
+use Phppride\Documentor\Contracts\Builderable;
 use Phppride\Documentor\Contracts\Documentable;
 use Phppride\Documentor\Contracts\Elementable;
 use Phppride\Documentor\Contracts\Node;
@@ -14,7 +14,7 @@ use Phppride\Documentor\Contracts\Tokenable;
 use Phppride\Documentor\Tokenizer\Parser;
 use Phppride\Documentor\Tokenizer\Token;
 
-class TreeBuilder implements Builder
+class TreeBuilder implements Builderable
 {
     private ?Parser $parser;
 
