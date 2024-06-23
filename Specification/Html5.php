@@ -1,0 +1,60 @@
+<?php
+
+declare(strict_types=1);
+
+namespace Hmrdevil\Html5\Specification;
+
+use Hmrdevil\Html5\Contracts\Specification;
+
+class Html5 extends AbstractSpecification implements Specification
+{
+    private const NAME = 'HTML 5';
+
+    private string $pattern = '/<[!?\w][\w\s="-:;А-яёЁ]*>|<\/\w+>/';
+
+    private array $elements = [
+        'a', 'abbr', 'address', 'area', 'article',
+        'aside', 'audio', 'b', 'base', 'bdi',
+        'bdo', 'blockquote', 'body', 'br', 'button',
+        'canvas', 'caption', 'cite', 'code', 'col',
+        'colgroup', 'data', 'datalist', 'dd', 'del',
+        'details', 'dfn', 'dialog', 'div', 'dl',
+        'dt', 'em', 'embed', 'fieldset', 'figcaption',
+        'figure', 'footer', 'form', 'h1', 'h2',
+        'h3', 'h4', 'h5', 'h6', 'head',
+        'header', 'hgroup', 'hr', 'html', 'i',
+        'iframe', 'img', 'input', 'ins', 'kbd',
+        'label', 'legend', 'li', 'link', 'main',
+        'map', 'mark', 'math', 'menu', 'meta',
+        'meter', 'nav', 'noscript', 'object', 'ol',
+        'optgroup', 'option', 'output', 'p', 'picture',
+        'pre', 'progress', 'q', 'rp', 'rt',
+        'ruby', 's', 'samp', 'script', 'search',
+        'section', 'select', 'slot', 'small', 'source',
+        'span', 'strong', 'style', 'sub', 'summary',
+        'sup', 'svg', 'table', 'tbody', 'td',
+        'template', 'textarea', 'tfoot', 'th', 'thead',
+        'time', 'title', 'tr', 'track', 'u',
+        'ul', 'var', 'video', 'wbr'
+    ];
+
+    public function getElements(): array
+    {
+        return $this->elements;
+    }
+
+    public function getRulesForElement(string $name): array
+    {
+        return [];
+    }
+
+    public function supportUserElements(): bool
+    {
+        return true;
+    }
+
+    public function getMainPattern(): string
+    {
+        return $this->pattern;
+    }
+}
