@@ -6,5 +6,5 @@ namespace Phppride\Documentor\Contracts;
 
 interface Builder
 {
-    public function build(): Document;
+    public function build(): Documentable;
 }

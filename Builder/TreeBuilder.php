@@ -6,7 +6,7 @@ namespace Phppride\Documentor\Builder;
 
 use Phppride\Documentor\Builder\Node\TextNode;
 use Phppride\Documentor\Contracts\Builder;
-use Phppride\Documentor\Contracts\Document;
+use Phppride\Documentor\Contracts\Documentable;
 use Phppride\Documentor\Contracts\Elementable;
 use Phppride\Documentor\Contracts\Node;
 use Phppride\Documentor\Contracts\Specification;
@@ -27,7 +27,7 @@ class TreeBuilder implements Builder
         $this->parser ??= new Parser($content);
     }
 
-    public function build(): Document
+    public function build(): Documentable
     {
         $result = $this->buildTree($this->parser->parse(), $this->content);
     }
