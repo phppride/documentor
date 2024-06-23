@@ -1,8 +1,8 @@
 <?php
 
-namespace Hmrdevil\Html5\Tests\Tokenizer;
+namespace Phppride\Documentor\Tests\Tokenizer;
 
-use Hmrdevil\Html5\Tokenizer\Parser;
+use Phppride\Documentor\Tokenizer\Parser;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 

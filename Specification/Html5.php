@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Specification;
+namespace Phppride\Documentor\Specification;
 
-use Hmrdevil\Html5\Contracts\Specification;
+use Phppride\Documentor\Contracts\Specification;
 
 class Html5 extends AbstractSpecification implements Specification
 {

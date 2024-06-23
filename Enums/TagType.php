@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Enums;
+namespace Phppride\Documentor\Enums;
 
 enum TagType: int
 {

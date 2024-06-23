@@ -2,6 +2,6 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Contracts;
+namespace Phppride\Documentor\Contracts;
 
 interface Token extends Node {}

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Rule;
+namespace Phppride\Documentor\Rule;
 
 enum RuleType: string
 {

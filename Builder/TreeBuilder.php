@@ -2,17 +2,17 @@
 
 declare(strict_types=1);
 
-namespace Hmrdevil\Html5\Builder;
+namespace Phppride\Documentor\Builder;
 
-use Hmrdevil\Html5\Builder\Node\TextNode;
-use Hmrdevil\Html5\Contracts\Builder;
-use Hmrdevil\Html5\Contracts\Document;
-use Hmrdevil\Html5\Contracts\Elementable;
-use Hmrdevil\Html5\Contracts\Node;
-use Hmrdevil\Html5\Contracts\Specification;
-use Hmrdevil\Html5\Contracts\Tokenable;
-use Hmrdevil\Html5\Tokenizer\Parser;
-use Hmrdevil\Html5\Tokenizer\Token;
+use Phppride\Documentor\Builder\Node\TextNode;
+use Phppride\Documentor\Contracts\Builder;
+use Phppride\Documentor\Contracts\Document;
+use Phppride\Documentor\Contracts\Elementable;
+use Phppride\Documentor\Contracts\Node;
+use Phppride\Documentor\Contracts\Specification;
+use Phppride\Documentor\Contracts\Tokenable;
+use Phppride\Documentor\Tokenizer\Parser;
+use Phppride\Documentor\Tokenizer\Token;
 
 class TreeBuilder implements Builder
 {
