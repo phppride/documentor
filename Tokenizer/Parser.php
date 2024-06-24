@@ -57,7 +57,7 @@ final class Parser
 
         $key = array_key_first($tokens);
 
-        if (!$key && empty($tokens[$key]->getContext())) {
+        if (!$key && empty($tokens[$key]->getContent())) {
             unset($tokens[$key]);
         }
 

@@ -6,5 +6,5 @@ namespace Phppride\Documentor\Contracts;
 
 interface Tokenable
 {
-    public function getContext(): string;
+    public function getContent(): string;
 }
