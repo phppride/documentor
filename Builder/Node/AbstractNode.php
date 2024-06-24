@@ -8,12 +8,12 @@ use Phppride\Documentor\Contracts\Node;
 
 abstract class AbstractNode implements Node
 {
-    public function getOffset(): int
+    public function offset(): int
     {
         return $this->offset;
     }
 
-    public function getEndOffset(): int
+    public function length(): int
     {
         return $this->offset + mb_strlen($this->context);
     }

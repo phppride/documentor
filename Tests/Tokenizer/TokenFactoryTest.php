@@ -18,7 +18,7 @@ class TokenFactoryTest extends TestCase
         $result = (new TokenFactory($this->pattern))->create($text, $offset);
 
         $this->assertInstanceOf(Token::class, $result);
-        $this->assertEquals($offset, $result->getOffset());
+        $this->assertEquals($offset, $result->offset());
         $this->assertEquals($tagname, $result->getTagname());
     }
 }

@@ -19,7 +19,7 @@ class TagTest extends TestCase
     #[DataProvider('provider')]
     public function testGetOffset(string $name, string $context, TagType $type, int $offset)
     {
-        $this->assertEquals($offset, (new Tag($name, $context, $type, $offset))->getOffset());
+        $this->assertEquals($offset, (new Tag($name, $context, $type, $offset))->offset());
     }
 
     #[DataProvider('provider')]
@@ -37,7 +37,7 @@ class TagTest extends TestCase
     #[DataProvider('provider')]
     public function testGetEndOffset(string $name, string $context, TagType $type, int $offset)
     {
-        $this->assertEquals($offset + mb_strlen($context), (new Tag($name, $context, $type, $offset))->getEndOffset());
+        $this->assertEquals($offset + mb_strlen($context), (new Tag($name, $context, $type, $offset))->length());
     }
 
     public static function provider(): array

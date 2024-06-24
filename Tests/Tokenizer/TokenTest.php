@@ -12,7 +12,7 @@ class TokenTest extends TestCase
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]
     public function testGetOffset(string $context, int $offset, ?string $tagname)
     {
-        $this->assertEquals($offset, (new Token($context, $offset, $tagname))->getOffset());
+        $this->assertEquals($offset, (new Token($context, $offset, $tagname))->offset());
     }
 
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]
@@ -24,7 +24,7 @@ class TokenTest extends TestCase
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]
     public function testGetEndOffset(string $context, int $offset, ?string $tagname)
     {
-        $this->assertEquals($offset + mb_strlen($context), (new Token($context, $offset, $tagname))->getEndOffset());
+        $this->assertEquals($offset + mb_strlen($context), (new Token($context, $offset, $tagname))->length());
     }
 
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]

@@ -59,8 +59,8 @@ class TreeBuilder implements Builderable
 
     private function buildTextNode(Token $token, Token $nextToken, string $context): TextNode
     {
-        $offset = $token->getEndOffset();
-        $length = $nextToken->getOffset() - $offset;
+        $offset = $token->length();
+        $length = $nextToken->offset() - $offset;
         $content = mb_substr($context, $offset, $length);
 
         return new TextNode(mb_substr($context, $offset, $length), $offset);
