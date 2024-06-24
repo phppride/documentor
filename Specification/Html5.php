@@ -43,7 +43,7 @@ class Html5 extends AbstractSpecification implements Specification
         return $this->elements;
     }
 
-    public function getRulesForElement(string $name): array
+    public function elementRules(string $name): array
     {
         return [];
     }
@@ -53,7 +53,7 @@ class Html5 extends AbstractSpecification implements Specification
         return true;
     }
 
-    public function getMainPattern(): string
+    public function pattern(): string
     {
         return $this->pattern;
     }
