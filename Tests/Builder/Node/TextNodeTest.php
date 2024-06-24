@@ -1,8 +1,8 @@
 <?php
 
-namespace Phppride\Documentor\Tests\Builder\Node;
+namespace Phppride\Html5\Tests\Builder\Node;
 
-use Phppride\Documentor\Builder\Node\TextNode;
+use Phppride\Html5\Builder\Node\TextNode;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 

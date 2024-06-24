@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Phppride\Documentor\Builder\Node;
+namespace Phppride\Html5\Builder\Node;
 
-use Phppride\Documentor\Enums\TagType;
+use Phppride\Html5\Enums\TagType;
 use Phppride\Documentor\Contracts\Elementable;
 
 final class Tag extends AbstractNode implements Elementable
@@ -12,7 +12,7 @@ final class Tag extends AbstractNode implements Elementable
     public function __construct(
         private string $name,
         protected string $context,
-        private TagType $type,
+        private string $type,
         protected int $offset
     ) {}
 
@@ -21,7 +21,7 @@ final class Tag extends AbstractNode implements Elementable
         return $this->name;
     }
 
-    public function getType(): TagType
+    public function getType(): string
     {
         return $this->type;
     }

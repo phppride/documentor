@@ -2,14 +2,14 @@
 
 declare(strict_types=1);
 
-namespace Phppride\Documentor\Builder;
+namespace Phppride\Html5\Builder;
 
-use Phppride\Documentor\Builder\Node\TextNode;
+use Phppride\Html5\Builder\Node\TextNode;
 use Phppride\Documentor\Contracts\Builderable;
 use Phppride\Documentor\Contracts\Documentable;
 use Phppride\Documentor\Contracts\Elementable;
-use Phppride\Documentor\Tokenizer\Parser;
-use Phppride\Documentor\Tokenizer\Token;
+use Phppride\Html5\Tokenizer\Parser;
+use Phppride\Html5\Tokenizer\Token;
 
 class TreeBuilder implements Builderable
 {
