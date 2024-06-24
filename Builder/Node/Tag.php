@@ -4,7 +4,6 @@ declare(strict_types=1);
 
 namespace Phppride\Html5\Builder\Node;
 
-use Phppride\Html5\Enums\TagType;
 use Phppride\Documentor\Contracts\Elementable;
 
 final class Tag extends AbstractNode implements Elementable

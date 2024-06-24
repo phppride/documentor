@@ -6,10 +6,8 @@ namespace Phppride\Html5\Specification;
 
 use Phppride\Documentor\Contracts\Specification;
 
-class Html5 extends AbstractSpecification implements Specification
+class Html5 implements Specification
 {
-    private const NAME = 'HTML 5';
-
     private string $pattern = '/<[!?\w][\w\s="-:;А-яёЁ]*>|<\/\w+>/';
 
     private array $elements = [
@@ -38,6 +36,16 @@ class Html5 extends AbstractSpecification implements Specification
         'ul', 'var', 'video', 'wbr'
     ];
 
+    public function pattern(): string
+    {
+        return $this->pattern;
+    }
+
+    public function getName(): string
+    {
+        return 'HTML 5';
+    }
+
     public function getElements(): array
     {
         return $this->elements;
@@ -51,10 +59,5 @@ class Html5 extends AbstractSpecification implements Specification
     public function supportUserElements(): bool
     {
         return true;
-    }
-
-    public function pattern(): string
-    {
-        return $this->pattern;
     }
 }
