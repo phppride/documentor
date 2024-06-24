@@ -40,18 +40,18 @@ final class Parser
             $offset += mb_strlen($tokenContext);
             $tokens[] = isset($lastProcessedToken)
                 ? $this->factory->create(
-                    mb_substr($this->context, $lastProcessedToken->getEndOffset(), $newToken->getOffset() - $lastProcessedToken->getEndOffset()),
-                    $lastProcessedToken->getEndOffset())
+                    mb_substr($this->context, $lastProcessedToken->length(), $newToken->offset() - $lastProcessedToken->length()),
+                    $lastProcessedToken->length())
                 : $this->factory->create(
-                    mb_substr($this->context, 0, $newToken->getOffset()),
+                    mb_substr($this->context, 0, $newToken->offset()),
                     0);
             $tokens[] = $lastProcessedToken = $lastToken = $newToken;
         }
 
-        if ($end !== $lastToken->getEndOffset()) {
+        if ($end !== $lastToken->length()) {
             $tokens[] = $this->factory->create(
-                mb_substr($this->context, $lastToken->getEndOffset(), $end - $lastToken->getEndOffset()),
-                $lastToken->getEndOffset()
+                mb_substr($this->context, $lastToken->length(), $end - $lastToken->length()),
+                $lastToken->length()
             );
         }
 
