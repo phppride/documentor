@@ -11,7 +11,7 @@ class TextNodeTest extends TestCase
     #[DataProvider('provider')]
     public function testGetContent(?string $content, int $offset)
     {
-        $this->assertEquals($content, (new TextNode($content, $offset))->getContext());
+        $this->assertEquals($content, (new TextNode($content, $offset))->getContent());
     }
 
     #[DataProvider('provider')]

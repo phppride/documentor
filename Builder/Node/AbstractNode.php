@@ -18,7 +18,7 @@ abstract class AbstractNode implements Node
         return $this->offset + mb_strlen($this->context);
     }
 
-    public function getContext(): string
+    public function getContent(): string
     {
         return $this->context;
     }

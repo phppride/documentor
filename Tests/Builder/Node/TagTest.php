@@ -31,7 +31,7 @@ class TagTest extends TestCase
     #[DataProvider('provider')]
     public function testGetContext(string $name, string $context, TagType $type, int $offset)
     {
-        $this->assertEquals($context, (new Tag($name, $context, $type, $offset))->getContext());
+        $this->assertEquals($context, (new Tag($name, $context, $type, $offset))->getContent());
     }
 
     #[DataProvider('provider')]
