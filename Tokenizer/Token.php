@@ -2,9 +2,9 @@
 
 declare(strict_types=1);
 
-namespace Phppride\Documentor\Tokenizer;
+namespace Phppride\Html5\Tokenizer;
 
-use Phppride\Documentor\Builder\Node\AbstractNode;
+use Phppride\Html5\Builder\Node\AbstractNode;
 use Phppride\Documentor\Contracts\Node;
 
 final class Token extends AbstractNode implements Node

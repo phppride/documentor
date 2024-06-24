@@ -1,8 +1,8 @@
 <?php
 
-namespace Phppride\Documentor\Tests\Tokenizer;
+namespace Phppride\Html5\Tests\Tokenizer;
 
-use Phppride\Documentor\Tokenizer\Parser;
+use Phppride\Html5\Tokenizer\Parser;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProvider;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Phppride\Documentor\Builder\Node;
+namespace Phppride\Html5\Builder\Node;
 
 use Phppride\Documentor\Contracts\Node;
 

@@ -1,11 +1,11 @@
 {
-    "name": "phppride/documentor",
-    "description": "",
+    "name": "phppride/html5",
+    "description": "An HTML5 parser and serializer conforming to the specification",
     "type": "library",
     "license": "MIT",
     "autoload": {
         "psr-4": {
-            "Phppride\\Documentor\\": ""
+            "Phppride\\Html5\\": ""
         },
         "exclude-from-classmap": [
             "Tests/"
@@ -13,7 +13,7 @@
     },
     "autoload-dev": {
         "psr-4": {
-            "Phppride\\Documentor\\Tests\\": "Tests/"
+            "Phppride\\Html5\\Tests\\": "Tests/"
         }
     },
     "authors": [

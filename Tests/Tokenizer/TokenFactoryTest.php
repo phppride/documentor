@@ -1,10 +1,10 @@
 <?php
 
-namespace Phppride\Documentor\Tests\Tokenizer;
+namespace Phppride\Html5\Tests\Tokenizer;
 
-use Phppride\Documentor\Tests\Providers\TokenDataProvider;
-use Phppride\Documentor\Tokenizer\TokenFactory;
-use Phppride\Documentor\Tokenizer\Token;
+use Phppride\Html5\Tests\Providers\TokenDataProvider;
+use Phppride\Html5\Tokenizer\TokenFactory;
+use Phppride\Html5\Tokenizer\Token;
 use PHPUnit\Framework\TestCase;
 use PHPUnit\Framework\Attributes\DataProviderExternal;
 

@@ -2,7 +2,7 @@
 
 declare(strict_types=1);
 
-namespace Phppride\Documentor\Specification;
+namespace Phppride\Html5\Specification;
 
 use Phppride\Documentor\Contracts\Specification;
 
