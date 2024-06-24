@@ -5,16 +5,13 @@ declare(strict_types=1);
 namespace Phppride\Documentor\Builder;
 
 use Phppride\Documentor\Builder\Node\TextNode;
-use Phppride\Documentor\Contracts\Builder;
-use Phppride\Documentor\Contracts\Document;
+use Phppride\Documentor\Contracts\Builderable;
+use Phppride\Documentor\Contracts\Documentable;
 use Phppride\Documentor\Contracts\Elementable;
-use Phppride\Documentor\Contracts\Node;
-use Phppride\Documentor\Contracts\Specification;
-use Phppride\Documentor\Contracts\Tokenable;
 use Phppride\Documentor\Tokenizer\Parser;
 use Phppride\Documentor\Tokenizer\Token;
 
-class TreeBuilder implements Builder
+class TreeBuilder implements Builderable
 {
     private ?Parser $parser;
 
@@ -27,7 +24,7 @@ class TreeBuilder implements Builder
         $this->parser ??= new Parser($content);
     }
 
-    public function build(): Document
+    public function build(): Documentable
     {
         $result = $this->buildTree($this->parser->parse(), $this->content);
     }
@@ -59,8 +56,8 @@ class TreeBuilder implements Builder
 
     private function buildTextNode(Token $token, Token $nextToken, string $context): TextNode
     {
-        $offset = $token->getEndOffset();
-        $length = $nextToken->getOffset() - $offset;
+        $offset = $token->length();
+        $length = $nextToken->offset() - $offset;
         $content = mb_substr($context, $offset, $length);
 
         return new TextNode(mb_substr($context, $offset, $length), $offset);
