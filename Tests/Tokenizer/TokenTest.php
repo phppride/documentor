@@ -18,7 +18,7 @@ class TokenTest extends TestCase
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]
     public function testGetContext(string $context, int $offset, ?string $tagname)
     {
-        $this->assertEquals($context, (new Token($context, $offset, $tagname))->getContent());
+        $this->assertEquals($context, (new Token($context, $offset, $tagname))->content());
     }
 
     #[DataProviderExternal(TokenDataProvider::class, 'provider')]
